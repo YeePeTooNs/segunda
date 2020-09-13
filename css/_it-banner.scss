@@ -1,0 +1,41 @@
+.content-banner {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    background: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0.452),
+    rgba(0, 0, 0, 0.308)), 
+    url(../img/it-services-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        margin-top: 100px;
+        background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.452),
+        rgba(0, 0, 0, 0.308)), 
+        url(../img/it-services-banner.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .text-banner {
+        width: 300px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 50px;
+            color: #fff;
+        }
+    }
+}
+
+

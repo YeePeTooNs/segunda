@@ -1,0 +1,46 @@
+@mixin button {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: $colortittle;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    transition: all .3s ease;
+
+    &:hover {
+        color: #ffffff;
+        background-color: #bbbbbb;
+    }
+}
+
+
+@mixin card-responsive ($height:auto) {
+    @media screen and (max-width: 1200px) {
+        width: 40%;
+        height: $height;
+        margin: 1%;
+        // margin-top: 100px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+
+    @media screen and (max-width: 800px) {
+        width: 40%;
+        height: $height;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: 600px) {
+            width: 90%;
+            height: $height;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            }
+        }
+    }
+}

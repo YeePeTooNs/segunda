@@ -1,0 +1,42 @@
+// @import "nav-social";
+@import "nav";
+@import "slider";
+@import "about";
+@import "servi";
+@import "product";
+@import "contact";
+@import "footer";
+
+@import "it-banner";
+@import "it-services";
+@import "it-pack";
+
+@import "banner-services";
+@import "services-phone";
+@import "services-internet";
+@import "support";
+@import "card-product";
+
+@import "contact-banner";
+@import "contact-email";
+@import "contact-messenge";
+
+@import "mixins";
+@import "variables";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}

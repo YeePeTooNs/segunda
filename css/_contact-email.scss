@@ -1,0 +1,109 @@
+@import "mixins";
+
+.content-email {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tittle-form-email {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 20px;
+        background-color: #dddddd42;
+
+        h1 {
+            font-size: 65px;
+            font-weight: normal;
+            font-family: sans-serif;
+            color: #1900ff;
+            text-align: center;
+
+            @media screen and (max-width: 800px) {
+                font-size: 40px;
+            }
+
+            span {
+                color: #000;
+            }
+        }
+    }
+
+    .form {
+        width: 100%;
+        height: 600px;
+        background-color: #dddddd42;
+        display: flex;
+        justify-content: center;
+
+        .content-form-input {
+            width: 40%;
+            height: auto;
+
+            @media screen and (max-width: 800px) {
+                width: 95%;
+            }
+
+        .form-label {
+            width: 200px;
+            margin-top: 20px;
+            margin-left: 30px;
+            margin-bottom: 5px;
+            display: block;
+            color: #1900ff;
+            font-size: 20px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .form-input {
+            width: 100%;
+            height: 40px;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 12px;
+            outline: none;
+            border-radius: 20px;
+            border: 1px solid #00000048;
+        }
+
+        .form-textarea {
+            width: 100%;
+            height: 100px;
+            max-height: 150px;
+            min-height: 50px;
+            margin-bottom: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            border: 1px solid #00000048;
+        }
+
+        .btn-submit {
+            width: 100%;
+            height: 50px;
+            padding: 15px 0;
+            font-size: 18px;
+            outline: none;
+            background-color: #5553e0;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: all .5s ease;
+
+            &:hover {
+                background-color: #4543b3;
+                }
+            }
+        }
+    }
+}

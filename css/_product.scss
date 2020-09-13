@@ -1,0 +1,151 @@
+@import "mixins";
+@import "variables";
+
+.pro {
+
+.tittle-produc {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #ece3e3;
+
+    .tittle-produc1 {
+        width: 50%;
+        text-align: center;
+        padding: 25px;
+        font-size: 60px;
+        color: $colortittle;
+
+        @media screen and (max-width: 800px) {
+            width: 100%;
+            height: auto;
+            text-align: center;
+
+            @media screen and (max-width: 500px) {
+                width: 100%;
+                height: auto;
+                font-size: 40px;
+            }
+        }
+    }
+
+
+}
+
+.content-produc {
+    width: 100%;
+    height: 1000px;
+    background-color: #ece3e3;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
+    .produc {
+        width: 20%;
+        height: 340px;
+        background-color: #f3f3f3;
+        margin: 1%;
+        margin-bottom: 0;
+        overflow: hidden;
+        position: relative;
+        border-bottom: 8px solid $colortittle;
+        transition: all .3s ease;
+
+        &:hover {
+            height: 470px;
+        }
+
+        .content-img {
+            padding: 20px;
+            background-color: #cccccc;
+            overflow: hidden;
+            z-index: 100;
+        }
+
+        img {
+            width: 100%;
+            height: 250px;
+            transition: all .3s ease;
+        }
+
+        &:hover img {
+            transform: scale(1.2);
+        }
+
+        h5 {
+            text-align: center;
+            font-size: 25px;
+            padding: 5px;
+        }
+
+        p {
+            font-size: 20px;
+            padding: 10px;
+            font-weight: 500;
+            position: absolute;
+            top: 150px;
+            color: transparent;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .3s ease;
+        }
+
+        &:hover p{
+            visibility: visible;
+            opacity: 1;
+            top: 330px;
+            color: #000;
+        }
+
+        .price {
+            color: transparent;
+        }
+
+        &:hover .price {
+            top: 410px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .bottom-produc {
+            @include button;
+            padding: 10px 30px;
+            margin-left: 40%;
+            position: absolute;
+            top: 350px;
+        }
+
+        &:hover .bottom-produc {
+            top: 410px;
+        }
+
+        @media screen and (max-width: 800px) {
+            width: 45%;
+            height: auto;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width: 600px) {
+                width: 90%;
+                height: auto;
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+}
+}
+
+
+

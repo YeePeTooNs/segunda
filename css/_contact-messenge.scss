@@ -1,0 +1,196 @@
+@import "mixins";
+
+.content-messenge {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        height: 900px;
+    }
+
+    .tittle-form-messenge {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 20px;
+        background-color: #dddddd42;
+
+        h1 {
+            font-size: 65px;
+            font-weight: normal;
+            font-family: sans-serif;
+            color: #1900ff;
+            text-align: center;
+
+            @media screen and (max-width: 800px) {
+                font-size: 50px;
+            }
+
+            span {
+                color: #000;
+            }
+        }
+    }
+
+    .form-messenge {
+        width: 100%;
+        height: 600px;
+        background-color: #dddddd42;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .content-form-input-messenge {
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            @media screen and (max-width: 800px) {
+                width: 95%;
+                display: flex;
+                flex-direction: column;
+            }
+
+
+            .form-name {
+                width: 100%;
+                height: 70px;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+
+                @media screen and (max-width: 800px) {
+                    width: 100%;
+                    height: 120px;
+                    display: block;
+                }
+
+                .cosa {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+
+                    @media screen and (max-width: 800px) {
+                        width: 100%;
+                        display: block;
+                    }
+
+                    .form-label-messenge1 {
+                        width: 50%;
+                        margin-top: 20px;
+                        margin-left: 30px;
+                        margin-bottom: 5px;
+                        color: #1900ff;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    .form-input-messenge1 {
+                        width: 90%;
+                        height: 40px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        padding: 12px;
+                        outline: none;
+                        border-radius: 20px;
+                        border: 1px solid #00000048;
+                    }
+                }
+
+                .form-last-name {
+                    width: 50%;
+                    height: 60px;
+                    display: flex;
+                    flex-direction: column;
+
+                    @media screen and (max-width: 800px) {
+                        width: 100%;
+                        margin-top: 20px;
+                        display: inline-block;
+                    }
+
+                    .form-label-messenge2 {
+                        width: 50%;
+                        margin-top: 20px;
+                        margin-left: 30px;
+                        margin-bottom: 5px;
+                        color: #1900ff;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    .form-input-messenge2 {
+                        width: 90%;
+                        height: 40px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        padding: 12px;
+                        outline: none;
+                        border-radius: 20px;
+                        border: 1px solid #00000048;
+                    }
+                }
+            }
+
+        .form-label-messenge {
+            width: 200px;
+            margin-top: 20px;
+            margin-left: 30px;
+            margin-bottom: 5px;
+            display: block;
+            color: #1900ff;
+            font-size: 20px;
+            font-weight: 600;
+            position: relative;
+        }
+
+            .form-input-messenge {
+                width: 95%;
+                height: 40px;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 12px;
+                outline: none;
+                border-radius: 20px;
+                border: 1px solid #00000048;
+            }
+
+        .form-textarea-messenge {
+            width: 95%;
+            height: 100px;
+            max-height: 150px;
+            min-height: 50px;
+            margin-bottom: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            border: 1px solid #00000048;
+        }
+
+        .btn-submit-messenge {
+            width: 95%;
+            height: 50px;
+            padding: 15px 0;
+            font-size: 18px;
+            outline: none;
+            background-color: #5553e0;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: all .5s ease;
+
+            &:hover {
+                background-color: #4543b3;
+                }
+            }
+        }
+    }
+}
